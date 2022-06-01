@@ -1,0 +1,219 @@
+-- Made by XcrossyYTBackup
+local SynapseX = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local DarkGray = Instance.new("Frame")
+local scriptExe = Instance.new("ScrollingFrame")
+local ScriptInput = Instance.new("TextBox")
+local Scripts = Instance.new("ScrollingFrame")
+local Title = Instance.new("TextLabel")
+local ScriptHub = Instance.new("TextButton")
+local Attach = Instance.new("TextButton")
+local Execute = Instance.new("TextButton")
+local Clear = Instance.new("TextButton")
+local OpenFile = Instance.new("TextButton")
+local ExecuteFile = Instance.new("TextButton")
+local SaveFile = Instance.new("TextButton")
+local Options = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local Close = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+--Properties:
+SynapseX.Name = "SynapseX"
+SynapseX.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SynapseX.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+local player = game.Players.LocalPlayer
+
+Main.Name = "Main"
+Main.Draggable = true
+Main.Parent = SynapseX
+Main.BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.008, 0,0.554, 0)
+Main.Size = UDim2.new(0, 794, 0, 351)
+Main.Active = true
+Main.Draggable = true
+
+
+DarkGray.Name = "DarkGray"
+DarkGray.Parent = Main
+DarkGray.BackgroundColor3 = Color3.new(0.2, 0.2, 0.2)
+DarkGray.BorderSizePixel = 0
+DarkGray.Position = UDim2.new(0, 0, 0.0854700878, 0)
+DarkGray.Size = UDim2.new(0, 794, 0, 321)
+
+scriptExe.Name = "scriptExe"
+scriptExe.Parent = DarkGray
+scriptExe.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+scriptExe.BorderSizePixel = 0
+scriptExe.Position = UDim2.new(0.014492698, 0, 0.0218068529, 0)
+scriptExe.Size = UDim2.new(0, 653, 0, 271)
+scriptExe.ScrollBarThickness = 10
+
+ScriptInput.Name = "ScriptInput"
+ScriptInput.Parent = scriptExe
+ScriptInput.BackgroundColor3 = Color3.new(1, 1, 1)
+ScriptInput.BackgroundTransparency = 1
+ScriptInput.Position = UDim2.new(0.0107197547, 0, 0, 0)
+ScriptInput.Size = UDim2.new(0, 634, 0, 542)
+ScriptInput.Font = Enum.Font.SourceSans
+ScriptInput.PlaceholderText = "|"
+ScriptInput.Text = ""
+ScriptInput.TextColor3 = Color3.new(1, 1, 1)
+ScriptInput.TextSize = 20
+ScriptInput.ClearTextOnFocus = false
+ScriptInput.TextWrapped = true
+ScriptInput.TextXAlignment = Enum.TextXAlignment.Left
+ScriptInput.TextYAlignment = Enum.TextYAlignment.Top
+
+Scripts.Name = "Scripts"
+Scripts.Parent = DarkGray
+Scripts.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Scripts.BorderSizePixel = 0
+Scripts.Position = UDim2.new(0.848484874, 0, 0.0218068529, 0)
+Scripts.Size = UDim2.new(0, 113, 0, 271)
+Scripts.ScrollBarThickness = 10
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.new(1, 1, 1)
+Title.BackgroundTransparency = 1
+Title.Position = UDim2.new(0.368906468, 0, 0, 0)
+Title.Size = UDim2.new(0, 200, 0, 30)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "YUB-X v1.3.2"
+Title.TextColor3 = Color3.new(1, 1, 1)
+Title.TextSize = 20
+Title.TextWrapped = true
+
+ScriptHub.Name = "ScriptHub"
+ScriptHub.Parent = Main
+ScriptHub.BackgroundColor3 = Color3.new(0.239216, 0.243137, 0.231373)
+ScriptHub.BorderSizePixel = 0
+ScriptHub.Position = UDim2.new(0.868247688, 0, 0.894586921, 0)
+ScriptHub.Size = UDim2.new(0, 83, 0, 28)
+ScriptHub.Font = Enum.Font.SourceSans
+ScriptHub.Text = "Script Hub"
+ScriptHub.TextColor3 = Color3.new(1, 1, 1)
+ScriptHub.TextSize = 14
+
+Attach.Name = "Attach"
+Attach.Parent = Main
+Attach.BackgroundColor3 = Color3.new(0.239216, 0.243137, 0.231373)
+Attach.BorderSizePixel = 0
+Attach.Position = UDim2.new(0.748353124, 0, 0.894586921, 0)
+Attach.Size = UDim2.new(0, 83, 0, 28)
+Attach.Font = Enum.Font.SourceSans
+Attach.Text = "Attach"
+Attach.TextColor3 = Color3.new(1, 1, 1)
+Attach.TextSize = 14
+
+Execute.Name = "Execute"
+Execute.Parent = Main
+Execute.BackgroundColor3 = Color3.new(0.239216, 0.243137, 0.231373)
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.0144928098, 0, 0.894586921, 0)
+Execute.Size = UDim2.new(0, 83, 0, 28)
+Execute.Font = Enum.Font.SourceSans
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.new(1, 1, 1)
+Execute.TextSize = 14
+
+Clear.Name = "Clear"
+Clear.Parent = Main
+Clear.BackgroundColor3 = Color3.new(0.239216, 0.243137, 0.231373)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.126714587, 0, 0.894586921, 0)
+Clear.Size = UDim2.new(0, 83, 0, 28)
+Clear.Font = Enum.Font.SourceSans
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.new(1, 1, 1)
+Clear.TextSize = 14
+
+OpenFile.Name = "OpenFile"
+OpenFile.Parent = Main
+OpenFile.BackgroundColor3 = Color3.new(0.239216, 0.243137, 0.231373)
+OpenFile.BorderSizePixel = 0
+OpenFile.Position = UDim2.new(0.240195796, 0, 0.894586921, 0)
+OpenFile.Size = UDim2.new(0, 83, 0, 28)
+OpenFile.Font = Enum.Font.SourceSans
+OpenFile.Text = "Open File"
+OpenFile.TextColor3 = Color3.new(1, 1, 1)
+OpenFile.TextSize = 14
+OpenFile.MouseButton1Click:Connect(function()
+
+end)
+
+
+
+
+
+ExecuteFile.Name = "ExecuteFile"
+ExecuteFile.Parent = Main
+ExecuteFile.BackgroundColor3 = Color3.new(0.239216, 0.243137, 0.231373)
+ExecuteFile.BorderSizePixel = 0
+ExecuteFile.Position = UDim2.new(0.352475643, 0, 0.894586921, 0)
+ExecuteFile.Size = UDim2.new(0, 83, 0, 28)
+ExecuteFile.Font = Enum.Font.SourceSans
+ExecuteFile.Text = "Execute File"
+ExecuteFile.TextColor3 = Color3.new(1, 1, 1)
+ExecuteFile.TextSize = 14
+
+SaveFile.Name = "SaveFile"
+SaveFile.Parent = Main
+SaveFile.BackgroundColor3 = Color3.new(0.239216, 0.243137, 0.231373)
+SaveFile.BorderSizePixel = 0
+SaveFile.Position = UDim2.new(0.464755476, 0, 0.894586921, 0)
+SaveFile.Size = UDim2.new(0, 83, 0, 28)
+SaveFile.Font = Enum.Font.SourceSans
+SaveFile.Text = "Save File"
+SaveFile.TextColor3 = Color3.new(1, 1, 1)
+SaveFile.TextSize = 14
+
+Options.Name = "Options"
+Options.Parent = Main
+Options.BackgroundColor3 = Color3.new(0.239216, 0.243137, 0.231373)
+Options.BorderSizePixel = 0
+Options.Position = UDim2.new(0.576977253, 0, 0.894586921, 0)
+Options.Size = UDim2.new(0, 83, 0, 28)
+Options.Font = Enum.Font.SourceSans
+Options.Text = "Options"
+Options.TextColor3 = Color3.new(1, 1, 1)
+Options.TextSize = 14
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundColor3 = Color3.new(1, 1, 1)
+Close.BackgroundTransparency = 1
+Close.Position = UDim2.new(0.963965595, 0, 0, 0)
+Close.Size = UDim2.new(0, 28, 0, 23)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.new(1, 1, 1)
+Close.TextSize = 14
+
+TextButton.Parent = Main
+TextButton.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton.BackgroundTransparency = 1
+TextButton.Position = UDim2.new(0.928701103, 0, 0, 0)
+TextButton.Size = UDim2.new(0, 28, 0, 23)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "-"
+TextButton.TextColor3 = Color3.new(1, 1, 1)
+TextButton.TextSize = 14
+-- Scripts:
+
+Execute.MouseButton1Click:Connect(function()
+loadstring(ScriptInput.Text)()
+Execute.Text = "Executed!"
+wait(0.2)
+Execute.Text = "Execute!"
+end)
+
+Close.MouseButton1Click:Connect(function()
+    
+Main.Visible = false
+end)
+
+Clear.MouseButton1Click:Connect(function()
+ScriptInput.Text = ""
+end)
